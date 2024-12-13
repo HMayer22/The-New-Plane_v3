@@ -1,0 +1,5 @@
+python-nmap
+flask
+waitress
+bs4
+requests
