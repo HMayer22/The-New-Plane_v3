@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Response</title>
+        <link rel="stylesheet" href="/static/DefaultStyle.css" />
+        <script type="text/javascript" src="/static/code.js"></script>
+        <script>
+            const eventSource = new EventSource('/stream');
+
+            eventSource.onmessage = function(event) {
+                const outputElement = document.getElementById('output');
+
+                outputElement.innerHTML += event.data + '<br>';
+
+                outputElement.scrollTop = outputElement.scrollHeight;
+            
+                if (event.data === "<stop></stop>") {
+                    eventSource.close();
+                }
+            };
+
+            eventSource.onerror = function() {
+                eventSource.close();
+            };
+        </script>
+    </head>
+    <body>
+        <table border=0 width="100%" cellpadding="10%">
+            <td width="20%" align="center" valign="bottom">
+                Domain <br>
+                <font id="redfont">{{ entries[0] }}</font>
+            </td>
+
+            <td width="20%" align="center" valign="bottom">
+                Port <br>
+                <font id="redfont">{{ entries[1] }}</font>
+            </td>
+
+            <td width="20%" align="center" valign="bottom">
+                Option <br>
+                <font id="redfont">{{ entries[2] }}</font>
+            </td>
+
+            <td width="20%" align="center" valign="bottom">
+                {{ entries[3] }} <br>
+                <font id="redfont">{{ entries[4] }}</font>
+            </td>
+
+            <td width="20%" align="center" valign="bottom">
+                {{ entries[5] }} <br>
+                <font id="redfont">{{ entries[6] }}</font>
+            </td>
+
+        </table>
+        <br>
+
+        <div class="terminal-container formatgreen" id="output"></div> 
+
+        <br>
+
+        <center>
+            <button onclick="stopAttack()" id="stop-button">Stop The Attack</button>
+        </center>
+
+        <button onclick="returnAndStop()" id="return-button">❮ Return</button>
+    </body>
+</html>

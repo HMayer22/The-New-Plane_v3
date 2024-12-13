@@ -1,0 +1,104 @@
+.terminal-container {
+    background-color: #1d1f21;  
+    border: 2px solid #00ff00;  
+    padding: 20px;
+    width: 95%;
+    max-width: 1000px;
+    height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);  
+      
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+#return-button {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(131, 218, 0);
+    text-shadow: 2px 2px 3px rgb(131, 218, 0);
+    font-size: 170%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#stop-button {
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgb(36, 155, 0);
+    background-color: black;
+    margin-inline: calc(43% - 115.4px);
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 3px red;
+    color: red;
+}
+
+#input-red {
+    box-shadow: 2px 3px 4px rgb(36, 155, 0);
+    background-color: black;
+    color: rgb(218, 0, 0);
+    font-size: 170%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#output {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-shadow: 2px 5px 5px green;
+    color: rgb(131, 218, 0);
+}
+
+#redfont {
+    color: red;
+    text-shadow: 2px 3px 3px red;
+}
+
+#hide-item {
+    display: none;
+}
+
+#terminal-container::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, from(rgba(60, 2, 2, 0.5)), to(rgba(2, 56, 3, 0.5))), url(./images/matrix.png);
+}
+
+h1 {
+    color: red;
+    text-shadow: 1px 1px 1px red;
+    font-size: 400%;
+}
+
+p, label, td {
+    text-align: center;
+    text-shadow: 2px 5px 5px green;
+    font-size: 200%;
+    color: rgb(131, 218, 0);
+}
+
+table {
+    background-color: #00000079;
+    border-radius: 10px;
+}
+
+input {
+    box-shadow: 2px 3px 4px rgb(36, 155, 0);
+    background-color: black;
+    color: rgb(131, 218, 0);
+    font-size: 150%;
+    text-align: center;
+    border-radius: 6px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(131, 218, 0);
+}

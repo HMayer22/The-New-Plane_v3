@@ -1,0 +1,111 @@
+.terminal-container {
+    background-color: #06020D;
+    border: 2px solid #18B5D9;
+    padding: 20px;
+    width: 95%;
+    max-width: 1000px;
+    height: 400px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    box-shadow: 0 0 10px #146EA6;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#return-button {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    color: #18B5D9;
+    text-shadow: 2px 2px 3px #146EA6;
+    font-size: 170%;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#stop-button {
+    cursor: pointer;
+    box-shadow: 2px 3px 4px #146EA6;
+    background-color: black;
+    font-size: 150%;
+    text-shadow: 2px 2px 3px #A60A17;
+    color: #F22222;
+}
+
+#input-red {
+    box-shadow: 2px 3px 4px #146EA6;
+    background-color: black;
+    color: #F22222;
+    font-size: 170%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#output {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-shadow: 2px 5px 5px #cccccc5b;
+    color: #cccccc;
+}
+
+#redfont {
+    color: red;
+    text-shadow: 2px 3px 3px red;
+}
+
+#hide-item {
+    display: none;
+}
+
+#terminal-container::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, from(#0D0D0D), to(#26262686));
+}
+
+h1 {
+    color: #F22222;
+    margin-bottom: 20px;
+    text-shadow: 2px 3px 3px #A60A17;
+    font-size: 400%;
+}
+
+p, label, td {
+    text-align: center;
+    text-shadow: 2px 5px 5px #146EA6;
+    font-size: 200%;
+    margin: 20px;
+    margin-inline: auto;
+    color: #18B5D9;
+}
+
+label {
+    padding: 20px;
+}
+
+form {
+    border: 2px solid #18B5D9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+input {
+    box-shadow: 2px 3px 4px #146EA6;
+    background-color: black;
+    color: #d41020;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 6px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #cccccc;
+    background-color: #146EA6;
+}

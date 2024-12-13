@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>The New Plane</title>
+        <link rel="stylesheet" href="/static/DefaultStyle.css" />
+        <script type="text/javascript" src="/static/code.js"></script>
+    </head>
+    <body>
+        <br>
+        <center><h1>🛩️ THE NEW PLANE 🛩️</h1></center>
+        <hr size="1px">
+        <p>Welcome to DoS attack!</p>
+        <hr size="1px"> <br>
+        <form action="" method="POST">
+            
+            <center>
+                <label for="domain">Insert the target: <font id="redfont">*</font></label>
+                <input type="text" name="domain" id="name" placeholder="Domain or IP" required/>
+
+            <br>
+
+                <label for="port">Insert the port: </label>
+                <input type="number" name="port" id="name" placeholder="Default: http 80 / https 443" style="width: 34%; max-width: 300px;"/>
+
+            <br> <br>
+
+                <label for="options">Select a option: <font id="redfont">*</font></label><br>
+                <input type="radio" value="SCAN" name="options" onclick="hidden_item(true)" required>
+                <label for="scan">Scan</label><br>
+
+                <input type="radio" value="HTTP" onclick="hidden_item(false)" name="options">
+                <label for="http">HTTP</label><br>
+
+                <input type="radio" value="HTTPS" onclick="hidden_item(false)" name="options">
+                <label for="https">HTTPS</label><br>
+            </center>
+
+            <br> <br>
+
+            <center id="hide-item">
+                <label for="threads">Insert the threads: </label>
+                <input type="number" name="threads" id="name" placeholder="Default: 2500"/>
+
+                <br> <br> <br>
+
+                <label for="methods">Select a method: <font id="redfont">*</font></label><br>
+                <input type="radio" value="GET" name="methods">
+                <label for="get">GET</label><br>
+
+                <input type="radio" value="POST" name="methods">
+                <label for="post">POST</label><br>
+
+                <input type="radio" value="PUT" name="methods">
+                <label for="put">PUT</label><br>
+            </center>
+
+            <br>
+
+            <center>
+                <input id="input-red" type="submit" value="Start the attack!" />
+            </center>
+
+        </form>
+    </body>
+</html>
